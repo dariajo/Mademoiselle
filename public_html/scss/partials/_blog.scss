@@ -1,0 +1,38 @@
+.blog{
+    .blog-item{
+        margin-bottom: 80px;
+        img{
+           transition: all 1s;
+        }
+        .blog-wrapper{
+            display: block;
+            background-color: $white;
+            width: 80%;
+            height: 4.2*2.4rem;
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            bottom: 0%;
+            transform: translate(-50%, 50%);
+            padding: 20px;
+             mask-image: linear-gradient(to bottom, black 75%, transparent);
+            transition: all 1s;
+
+            .blog-date{
+                font-family: $bodoni;
+                font-style: italic;
+                font-size: 1.4rem;
+                font-weight: $font-weight-light;
+                line-height: 1.7rem;
+                letter-spacing: 0.1rem;
+                text-align: center;
+            }
+        }
+           &:hover .blog-wrapper{
+            background-color:$light-pink;
+        }
+            &:hover img{
+             transform: scale(1.1);
+        }
+    }
+}

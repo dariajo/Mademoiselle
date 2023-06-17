@@ -1,0 +1,50 @@
+
+
+.lead{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 50px;
+    &:after{
+        content: '';
+        background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0));
+        opacity: 0.45;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+    h1{
+        font-family: $title-font;
+        font-size: 4rem;
+        line-height: 5rem;
+        letter-spacing: 0.5rem;
+        color: $white;
+        font-weight: $font-weight-light;
+         flex: 0 0 70%;
+    }
+}
+ @media(min-width:576px){
+        .lead{
+            height: 400px;
+            h1{
+                flex: 0 0 50%;
+                font-size: 5rem;
+                line-height: 7rem;
+                letter-spacing: 1rem;
+            }
+        }
+    }
+    @media(min-width:992px){
+        .lead{
+            height: 640px;
+            margin-bottom: 75x;
+            h1{
+                font-size: 6rem;
+                line-height: 8.4rem;
+                letter-spacing: 2rem;
+            }
+        }
+    }
