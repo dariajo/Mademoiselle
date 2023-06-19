@@ -16,32 +16,43 @@
         inset: 0;
         z-index: -1;
     }
-    h1{
+    h1, .h1{
         font-family: $title-font;
-        font-size: 4rem;
-        line-height: 5rem;
-        letter-spacing: 0.5rem;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.2rem;
         color: $white;
         font-weight: $font-weight-light;
-         flex: 0 0 70%;
+        flex: 0 0 70%;
     }
 }
- @media(min-width:576px){
+@media(min-width:400px){
         .lead{
             height: 400px;
-            h1{
-                flex: 0 0 50%;
-                font-size: 5rem;
+            h1, .h1{
+                font-size: 3.5rem;
+                line-height: 6rem;
+                letter-spacing: 0.5rem;
+            }
+        }
+    }
+ @media(min-width:576px){
+        .lead{
+             height: 500px;
+            h1, .h1{
+                flex: 0 0 60%;
+                font-size: 4.6rem;
                 line-height: 7rem;
-                letter-spacing: 1rem;
+                letter-spacing: 0.7rem;
             }
         }
     }
     @media(min-width:992px){
         .lead{
+             flex: 0 0 40%;
             height: 640px;
             margin-bottom: 75x;
-            h1{
+            h1, .h1{
                 font-size: 6rem;
                 line-height: 8.4rem;
                 letter-spacing: 2rem;

@@ -1,0 +1,17 @@
+.professionals{
+    margin-bottom: 120px;
+    .professionals-member{
+        .professionals-item{
+            text-align: left;
+            .professionals-name{
+                font-size: 3rem;
+                line-break: 3rem;
+            }
+            .professionals-bio{
+                font-weight: $font-weight-light;
+            }
+        }
+    }
+
+}
+

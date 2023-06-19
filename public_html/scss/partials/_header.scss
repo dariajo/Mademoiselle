@@ -1,6 +1,6 @@
-$navbar-toggler-color: $gray-900;
-
-
+$navbar-toggler-color: $light-pink;
+$navbar-toggler-border: $dark-pink;
+$navbar-text-color: $gray-900;
 header{
     .navbar{
         .navbar-brand{
@@ -8,8 +8,9 @@ header{
         }
 
         .navbar-toggler{
-            border: 0;
-            color: transparent;
+            border: 1px solid $navbar-toggler-border;
+            padding: 5px;
+        
             & span{
                 display: block;
                 width: 30px;
@@ -31,10 +32,10 @@ header{
                     font-size: 1.4rem;
                     line-height: 1.7rem;
                     letter-spacing: 0.1rem;
-                    color: $navbar-toggler-color;
+                    color: $navbar-text-color;
                     border-bottom: 1px solid transparent;
                     &:hover, &.active{
-                        border-bottom: 1px solid $light-pink;
+                        border-bottom: 1px solid $navbar-toggler-color;
                     }
 
                 }

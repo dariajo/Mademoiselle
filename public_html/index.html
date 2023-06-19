@@ -28,7 +28,11 @@ and open the template in the editor.
 
 
         <!--CSS FILES-->
-
+        <!--Owl carousel-->
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
+        <!--letter plugin-->
+        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
 
 
@@ -70,7 +74,7 @@ and open the template in the editor.
         <main>
             <!--======================LEAD section start=====================-->
             <section class="lead d-flex justify-content-around" style="background-image: url(img/lead/mademoiselle_lead.png)">
-                <h1 class="text-center align-self-center">Welcome to Mademoiselle</h1>
+                <h1 class="lead-title text-center align-self-center">Welcome to Mademoiselle</h1>
 
             </section><!--lead end-->
 
@@ -135,13 +139,154 @@ and open the template in the editor.
             </section><!--blog end-->
 
             <!--=================== SERVICES section start==================-->
-            <section class="services">
+             <section class="services mb-5">
                 <div class="container">
-                    <h2>Our Services</h2>
-                    
+                    <h2 class="mb-5">Our Services</h2>
+                    <div class="services-wrapper">
+                        <div class="services-col"><!--item 1 start-->
+                            <article class="services-item">
+                                    <h3 class="services-title mb-5 w-75">Lip augmentation Lip filling with hyaluronum</h3>
+                                    <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                            </article>
+                        </div>
+                        <div class="services-col">
+                            <figure class="services-img">
+                                <img src="img/services/services_01.png" alt=""/>
+                            </figure>
+                        </div><!--item 1 end-->
+                         <div class="services-col"><!--item 2 start-->
+                            <article class="services-item even">
+                                <h3 class="services-title mb-5 w-75">male and female haircut</h3>
+                                <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                            </article>
+                        </div>
+                        <div class="services-col">
+                            <figure class="services-img mb-0">
+                                <img src="img/services/services_02.png" alt=""/>
+                            </figure>
+                        </div><!--item 2 end-->
+                        <div class="services-col"><!--item 3 start-->
+                            <article class="services-item">
+                                <h3 class="services-title mb-5 w-75">Day and night makeup</h3>
+                                <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                            </article>
+                        </div>
+                       <div class="services-col">
+                            <figure class="services-img mb-0">
+                                <img src="img/services/services_03.png" alt=""/>
+                            </figure>
+                        </div><!--item 3 end-->
+                        <div class="services-col"><!--item 4 start-->
+                            <article class="services-item even">
+                                <h3 class="services-title mb-5 w-75">Waxing with cold and warm wax</h3>
+                                <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                            </article>
+                        </div>
+                        <div class="services-col">
+                            <figure class="services-img mb-0">
+                                <img src="img/services/services_04.png" alt=""/>
+                            </figure>
+                        </div><!--item 4 end-->
+                    </div>
                 </div>
-            </section>
-        </main>
+            </section> <!--services section end-->
+
+            
+            <!--============= SLIDER PROFESSIONALS section start============-->
+            <section class="professionals">
+                <div class="container">
+                    <h2 class="professionals-title mb-5">Trust our professionals</h2>
+                    <ul class="professionals-slider owl-carousel owl-theme list-unstyled">
+                        <li class="professionals-member"><!--member-one start-->
+                            <div class="row">
+                                <div class="col-12 col-md-4 mx-lg-auto mb-4 mb-md-0">
+                                    <figure class="professionals-img mb-0">
+                                        <img class='w-100' src="img/professionals/professionals.png" alt=""/>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-8 col-lg-4 mx-lg-auto">
+                                    <article class="professionals-item">
+                                        <h3 class="professionals-name mb-5">Vera Valdez</h3>
+                                        <p class="professionals-bio mb-5 mb-lg-0">
+                                            Lorem Ipsum is simply dummy text of the printing 
+                                            and typesetting industry. Lorem Ipsum has been
+                                            the industry's standard dummy text ever since
+                                            the 1500s, when an unknown printer took a galley 
+                                            of type and scrambled it to make a type specimen
+                                            book. It has survived not only five centuries, but
+                                            also the leap into electronic typesetting, remaining
+                                            essentially unchanged.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </li><!--member-one end-->
+                        <li class="professionals-member"><!--member-two start-->
+                            <div class="row">
+                                <div class="col-12 col-md-4 mx-lg-auto mb-5 mb-md-0">
+                                    <figure class="professionals-img mb-0">
+                                        <img class='w-100' src="img/professionals/professionals.png" alt=""/>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-8 col-lg-4 mx-lg-auto">
+                                    <article class="professionals-item">
+                                        <h3 class="professionals-name mb-5">Vera Valdez</h3>
+                                        <p class="professionals-bio mb-4 mb-lg-0">
+                                            Lorem Ipsum is simply dummy text of the printing 
+                                            and typesetting industry. Lorem Ipsum has been
+                                            the industry's standard dummy text ever since
+                                            the 1500s, when an unknown printer took a galley 
+                                            of type and scrambled it to make a type specimen
+                                            book. It has survived not only five centuries, but
+                                            also the leap into electronic typesetting, remaining
+                                            essentially unchanged.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </li><!--member-two end-->
+                        <li class="professionals-member"><!--member-three start-->
+                            <div class="row">
+                                <div class="col-12 col-md-4 mx-lg-auto mb-4 mb-md-0">
+                                    <figure class="professionals-img mb-0">
+                                        <img class='w-100' src="img/professionals/professionals.png" alt=""/>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-8 col-lg-4 mx-lg-auto">
+                                    <article class="professionals-item">
+                                        <h3 class="professionals-name mb-5">Vera Valdez</h3>
+                                        <p class="professionals-bio mb-5 mb-lg-0">
+                                            Lorem Ipsum is simply dummy text of the printing 
+                                            and typesetting industry. Lorem Ipsum has been
+                                            the industry's standard dummy text ever since
+                                            the 1500s, when an unknown printer took a galley 
+                                            of type and scrambled it to make a type specimen
+                                            book. It has survived not only five centuries, but
+                                            also the leap into electronic typesetting, remaining
+                                            essentially unchanged.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </li><!--member-three end-->
+                    </ul><!--slider-end-->
+                </div>
+            </section><!--professionals section end-->
+
+        </main><!--main end-->
+
+
+        <footer class="">
+            <div class="container text-center">
+                <nav class="social mb-4">
+                    <a href="https://facebook.com" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com" class="fab fa-twitter"></a>
+                    <a href="https://instagram.com" class="fab fa-instagram"></a>
+                </nav>
+
+                <p class="copyright mb-0">Copyright &copy; 2019 <a href="index.html">Mademoiselle</a></p>
+            </div>
+        </footer><!--footer end-->
 
 
 
@@ -150,6 +295,12 @@ and open the template in the editor.
 
         <!--font awesome icons-->
         <script src="https://kit.fontawesome.com/85bd05dd45.js"></script>
+        <!--letter plugin-->
+        <script src="js/jquery.lettering.js" type="text/javascript"></script>
+        <script src="js/jquery.textillate.js" type="text/javascript"></script>
+        <!--Owl carousel-->
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
+
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>
