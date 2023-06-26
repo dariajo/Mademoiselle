@@ -28,22 +28,24 @@ and open the template in the editor.
 
 
         <!--CSS FILES-->
+        <!--speeding up image loading-->
+        <link rel="preload" href="/img/lead/mademoiselle_error.png" as="image"/>
         <!--Owl carousel-->
         <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
-        <!--letter plugin-->
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <!--animate plugin-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css"/>
+
+        <!--theme.css-->
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
 
-
-
     </head>
-    <body>
+    <body id='error'>
         <!--=========================HEADER start========================-->
-        <header class='py-3'>
+        <header class='fixed-top bg-white'>
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light bg-white">
-                    <a class="navbar-brand" href="about.html">
+                <nav class="navbar navbar-expand-md navbar-light py-3 px-0">
+                    <a class="navbar-brand" href="index.html">
                         <img class='logo' src="img/logo.png" alt=""/>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +57,7 @@ and open the template in the editor.
                     <div class="collapse navbar-collapse mt-3" id="main-menu">
                         <ul class="navbar-nav ml-auto text-center">
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="index.html">about <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-uppercase" href="about.html">about <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" href="services.html">services</a>
@@ -73,11 +75,11 @@ and open the template in the editor.
         </header><!--Header end-->
         <main>
             <!--======================LEAD section start=====================-->
-            <section class="lead d-flex justify-content-around" style="background-image: url(img/error/Mademoiselle_error.png)">
+            <section class="lead d-flex justify-content-center" id='error' style="background-image: url(img/lead/mademoiselle_error.png)">
                 <div class="text-center align-self-center">
-                <h1 class="lead-title">Eror 404</h1>
-                <p class="h1 lead-title mb-5"> Page not found</p>
-                <p class="btn btn-white text-uppercase">back to home</p>
+                    <h1 class="txl" data-text="rollIn" data-delay="800" data-letterDelay="60" data-scaleDelay="1.5">Eror 404</h1>
+                    <p class="h1 txl mb-5" data-text="rollIn" data-delay="800" data-delayScale="1.5"> Page not found</p>
+                    <p class="text-uppercase animated"  data-duration="2s" data-delay='1.5s' data-effect='fadeInUp'><a class="btn btn-white" href="index.html">back to home</a></p>
                 </div>
             </section><!--lead end-->
 

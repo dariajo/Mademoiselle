@@ -26,13 +26,16 @@ and open the template in the editor.
         <meta name="application-name" content="Mademoiselle">
         <link rel="icon" type="image/png" href="android-chrome-192x192.png">
 
-
         <!--CSS FILES-->
+        <!--speeding up image loading-->
+        <link rel="preload" href="/img/lead/mademoiselle_lead.png" as="image"/>
         <!--Owl carousel-->
         <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
-        <!--letter plugin-->
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <!--animate plugin-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css"/>
+
+        <!--theme.css-->
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
 
 
@@ -40,10 +43,10 @@ and open the template in the editor.
     </head>
     <body>
         <!--=========================HEADER start========================-->
-        <header class='py-3'>
+        <header class='fixed-top bg-white'>
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light bg-white">
-                    <a class="navbar-brand" href="about.html">
+                <nav class="navbar navbar-expand-md navbar-light py-3 px-0">
+                    <a class="navbar-brand" href="index.html">
                         <img class='logo' src="img/logo.png" alt=""/>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +58,7 @@ and open the template in the editor.
                     <div class="collapse navbar-collapse mt-3" id="main-menu">
                         <ul class="navbar-nav ml-auto text-center">
                             <li class="nav-item">
-                                <a class="nav-link active text-uppercase" href="index.html">about <span class="sr-only">(current)</span></a>
+                                <a class="nav-link active text-uppercase" href="about.html">about <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" href="services.html">services</a>
@@ -73,17 +76,19 @@ and open the template in the editor.
         </header><!--Header end-->
         <main>
             <!--======================LEAD section start=====================-->
-            <section class="lead d-flex justify-content-around" style="background-image: url(img/lead/mademoiselle_lead.png)">
-                <h1 class="lead-title text-center align-self-center">Welcome to Mademoiselle</h1>
+            <section class="lead d-flex justify-content-center" style="background-image: url(img/lead/mademoiselle_lead.png)">
+
+                <h1 class="txl text-center align-self-center" data-text="rollIn" data-delay="800" data-letterDelay="60" data-scaleDelay="1.5">Welcome to Mademoiselle</h1>
 
             </section><!--lead end-->
 
 
             <!--=======================BLOG section start====================-->
-            <section class="blog mb-5">
+            <section class="blog">
                 <div class="container">
                     <a href="blog.html">
-                        <h2 class="mb-5">Stay Up with the Latest Beauty Trends</h2>
+                        <h2 class="txl" data-text="fadeInDownBig" data-delay="0" data-letterDelay="30" data-scaleDelay="0.8">Stay Up with the Latest Beauty Trends</h2>
+                        <span class="h2-after"></span>
                     </a>
                     <div class="row">
                         <div class="col-12 col-xm-10 col-sm-8 col-md-4 mx-auto mb-md-0"> <!--item 1 start-->
@@ -139,25 +144,30 @@ and open the template in the editor.
             </section><!--blog end-->
 
             <!--=================== SERVICES section start==================-->
-             <section class="services mb-5">
+            <section class="services">
                 <div class="container">
-                    <h2 class="mb-5">Our Services</h2>
+                    <h2 class="txl" data-text="fadeInDownBig" data-delay="0" data-letterDelay="30" data-scaleDelay="0.8">Our Services</h2>
+                    <span class="h2-after"></span>
                     <div class="services-wrapper">
                         <div class="services-col"><!--item 1 start-->
                             <article class="services-item">
-                                    <h3 class="services-title mb-5 w-75">Lip augmentation Lip filling with hyaluronum</h3>
-                                    <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                                <div class="services-item-wrapper">
+                                    <h3 class="services-title mb-5">Lip augmentation Lip filling with hyaluronum</h3>
+                                    <a href="services_single.html" class="services-link btn btn-turnPink text-uppercase">learn more</a>
+                                </div>
                             </article>
                         </div>
                         <div class="services-col">
-                            <figure class="services-img">
-                                <img src="img/services/services_01.png" alt=""/>
+                            <figure class="services-img mb-0">
+                                <img class="" src="img/services/services_01.png" alt=""/>
                             </figure>
                         </div><!--item 1 end-->
-                         <div class="services-col"><!--item 2 start-->
+                        <div class="services-col"><!--item 2 start-->
                             <article class="services-item even">
-                                <h3 class="services-title mb-5 w-75">male and female haircut</h3>
-                                <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                                <div class="services-item-wrapper">
+                                    <h3 class="services-title mb-5 ">male and female haircut</h3>
+                                    <a href="services_single.html" class="services-link btn btn-turnWhite text-uppercase">learn more</a>
+                                </div>
                             </article>
                         </div>
                         <div class="services-col">
@@ -167,19 +177,23 @@ and open the template in the editor.
                         </div><!--item 2 end-->
                         <div class="services-col"><!--item 3 start-->
                             <article class="services-item">
-                                <h3 class="services-title mb-5 w-75">Day and night makeup</h3>
-                                <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                                <div class="services-item-wrapper">
+                                    <h3 class="services-title mb-5">Day and night makeup</h3>
+                                    <a href="services_single.html" class="services-link btn btn-turnPink text-uppercase">learn more</a>
+                                </div>
                             </article>
                         </div>
-                       <div class="services-col">
+                        <div class="services-col">
                             <figure class="services-img mb-0">
                                 <img src="img/services/services_03.png" alt=""/>
                             </figure>
                         </div><!--item 3 end-->
                         <div class="services-col"><!--item 4 start-->
                             <article class="services-item even">
-                                <h3 class="services-title mb-5 w-75">Waxing with cold and warm wax</h3>
-                                <a href="" class="services-link btn btn-default text-uppercase">learn more</a>
+                                <div class="services-item-wrapper">
+                                    <h3 class="services-title mb-5">Waxing with cold and warm wax</h3>
+                                    <a href="services_single.html" class="services-link btn btn-turnWhite text-uppercase">learn more</a>
+                                </div>
                             </article>
                         </div>
                         <div class="services-col">
@@ -191,23 +205,24 @@ and open the template in the editor.
                 </div>
             </section> <!--services section end-->
 
-            
+
             <!--============= SLIDER PROFESSIONALS section start============-->
             <section class="professionals">
                 <div class="container">
-                    <h2 class="professionals-title mb-5">Trust our professionals</h2>
-                    <ul class="professionals-slider owl-carousel owl-theme list-unstyled">
+                    <h2 class="professionals-title txl" data-text="fadeInDownBig" data-delay="0" data-letterDelay="30" data-scaleDelay="0.8">Trust our professionals</h2>
+                    <span class="h2-after"></span>
+                    <ul class="professionals-slider owl-carousel owl-theme list-unstyled position-relative">
                         <li class="professionals-member"><!--member-one start-->
-                            <div class="row">
-                                <div class="col-12 col-md-4 mx-lg-auto mb-4 mb-md-0">
+                            <div class="row p-4 p-lg-0">
+                                <div class="col-12 col-md-5 col-lg-4 offset-lg-1 mb-5 mb-md-0">
                                     <figure class="professionals-img mb-0">
-                                        <img class='w-100' src="img/professionals/professionals.png" alt=""/>
+                                        <img src="img/professionals/professionals.png" alt=""/>
                                     </figure>
                                 </div>
-                                <div class="col-12 col-md-8 col-lg-4 mx-lg-auto">
+                                <div class="col-12 col-md-7 col-lg-4 offset-lg-1">
                                     <article class="professionals-item">
                                         <h3 class="professionals-name mb-5">Vera Valdez</h3>
-                                        <p class="professionals-bio mb-5 mb-lg-0">
+                                        <p class="professionals-bio mb-4 mb-lg-0">
                                             Lorem Ipsum is simply dummy text of the printing 
                                             and typesetting industry. Lorem Ipsum has been
                                             the industry's standard dummy text ever since
@@ -222,13 +237,13 @@ and open the template in the editor.
                             </div>
                         </li><!--member-one end-->
                         <li class="professionals-member"><!--member-two start-->
-                            <div class="row">
-                                <div class="col-12 col-md-4 mx-lg-auto mb-5 mb-md-0">
+                            <div class="row p-5 p-lg-0">
+                                  <div class="col-12 col-md-5 col-lg-4 offset-lg-1 mb-5 mb-md-0">
                                     <figure class="professionals-img mb-0">
                                         <img class='w-100' src="img/professionals/professionals.png" alt=""/>
                                     </figure>
                                 </div>
-                                <div class="col-12 col-md-8 col-lg-4 mx-lg-auto">
+                               <div class="col-12 col-md-7 col-lg-4 offset-lg-1">
                                     <article class="professionals-item">
                                         <h3 class="professionals-name mb-5">Vera Valdez</h3>
                                         <p class="professionals-bio mb-4 mb-lg-0">
@@ -246,13 +261,13 @@ and open the template in the editor.
                             </div>
                         </li><!--member-two end-->
                         <li class="professionals-member"><!--member-three start-->
-                            <div class="row">
-                                <div class="col-12 col-md-4 mx-lg-auto mb-4 mb-md-0">
+                            <div class="row p-5 p-lg-0">
+                                  <div class="col-12 col-md-5 col-lg-4 offset-lg-1 mb-5 mb-md-0">
                                     <figure class="professionals-img mb-0">
                                         <img class='w-100' src="img/professionals/professionals.png" alt=""/>
                                     </figure>
                                 </div>
-                                <div class="col-12 col-md-8 col-lg-4 mx-lg-auto">
+                               <div class="col-12 col-md-7 col-lg-4 offset-lg-1">
                                     <article class="professionals-item">
                                         <h3 class="professionals-name mb-5">Vera Valdez</h3>
                                         <p class="professionals-bio mb-5 mb-lg-0">

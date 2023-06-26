@@ -1,6 +1,7 @@
 $navbar-toggler-color: $light-pink;
 $navbar-toggler-border: $dark-pink;
 $navbar-text-color: $gray-900;
+
 header{
     .navbar{
         .navbar-brand{
@@ -10,7 +11,7 @@ header{
         .navbar-toggler{
             border: 1px solid $navbar-toggler-border;
             padding: 5px;
-        
+
             & span{
                 display: block;
                 width: 30px;
@@ -21,8 +22,8 @@ header{
                     margin-bottom: 0px;
                 }
             }
-        }
-        //.navbar-toggler end
+        }//.navbar-toggler end
+        
 
         .navbar-nav{
             .nav-item{
@@ -33,17 +34,27 @@ header{
                     line-height: 1.7rem;
                     letter-spacing: 0.1rem;
                     color: $navbar-text-color;
-                    border-bottom: 1px solid transparent;
-                    &:hover, &.active{
-                        border-bottom: 1px solid $navbar-toggler-color;
-                    }
 
+                    &:after
+                        {
+                        content:'';
+                        display: block;
+                        width: 0px;
+                        height: 1px;
+                        margin-top: 5px;
+                        background-color: $navbar-toggler-color;
+                        transition:all 0.5s linear;
+                    }
+                    &:hover:after,
+                        &.active:after{
+                        width: 100%;
+                    }
                 }
             }
         }
     }
-}
-//.header end
+}//.header end
+
 
 @media(min-width:768px){
     header{
@@ -53,20 +64,19 @@ header{
             }
             .navbar-nav{
                 .nav-item{
-                    margin-right: 30px;
+                    margin-left: 30px;
                 }
             }
         }
     }
 }
 
-
 @media(min-width:1200px){
     header{
         .navbar{
             .navbar-nav{
                 .nav-item{
-                    margin-right: 72px;
+                    margin-left: 72px;
                 }
             }
         }

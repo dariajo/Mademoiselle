@@ -15,11 +15,13 @@ $light-pink: #ECD9D9;
 $dark-pink:#D0B6B6;
 $off-white:#F5F5F5;
 $white: #FFFFFF;
+$dark-blue:#253D61;
 
 body{
     font-family: $general-font;
     font-weight: $font-weight-normal;
     color:$general-text-color;
+    opacity: 0;
 }
 
 h2{
@@ -28,15 +30,22 @@ h2{
     font-size: 2rem;
     line-height: 3.5rem;
     letter-spacing: 0.2rem;
-    &:after{
-        content: '';
-        display: block;
-        background-color: $light-pink;
-        height: 1px;
-        width: 74px;
-        margin-top: 11px;
+    display: inline-block;
+}
+//ne moze h2:after zbog textillate animacije
+
+.h2-after{
+    display: block;
+    background-color: $light-pink;
+    margin-bottom:30px;
+    height: 1px;
+}
+@keyframes shortening{
+    100%{
+        width:74px;
     }
 }
+
 h3{
     font-family: $general-font;
     font-size: 2rem;
@@ -44,7 +53,21 @@ h3{
     text-transform: uppercase;
 
 }
-
+.single-title{
+    font-family: $general-font;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    letter-spacing: 0;
+}
+.light{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: $font-weight-light;
+    text-align: left;
+}
 
 
 @media(min-width:576px){
@@ -53,13 +76,26 @@ h3{
         line-height: 4.5rem;
         letter-spacing: 0.5rem;
     }
-
+    .single-title{
+        font-size: 4rem;
+        line-height: 4.2rem;
+    }
 }
-@media(min-width:768px){
+@media(min-width:992px){
     h3{
         font-family: $general-font;
         font-size: 3.6rem;
         line-height: 4.4rem;
     }
-
+    .single-title{
+        font-size: 4.4rem;
+        line-height: 5rem;
+    }
+}
+/* jquery add class*/
+.animated{
+    visibility: hidden;
+}
+.txl{
+    visibility: hidden;
 }

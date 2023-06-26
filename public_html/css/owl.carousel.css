@@ -30,9 +30,14 @@
     position: relative;
     overflow: hidden;
     border: 1px solid #ECD9D9;
-    padding: 54px 0;
+    padding: 50px 0 20px;
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
+  @media(min-width:992px){
+    .owl-carousel .owl-stage-outer {
+    padding: 60px 0;
+    }
+}
   .owl-carousel .owl-wrapper,
   .owl-carousel .owl-item {
     -webkit-backface-visibility: hidden;

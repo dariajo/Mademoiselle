@@ -1,0 +1,12 @@
+.pagination{
+    justify-content: center;
+    .page-item{
+        .page-link{ 
+            font-family: $bodoni;
+            font-size: 2rem;
+            &:hover {
+                  @include border-radius(50%);
+            }
+    }
+}
+}

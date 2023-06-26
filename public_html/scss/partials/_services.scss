@@ -1,7 +1,8 @@
 $services-background-one:$off-white;
 $services-background-two:$light-pink;
 
-.services{
+.services{                   /*htela sam da probam css grid*/
+    margin-bottom: 111px;
     .services-wrapper{
         display: grid;
         grid-template-columns: 1fr;
@@ -9,16 +10,17 @@ $services-background-two:$light-pink;
         .services-col{
             .services-item{
                 height: 100%;
-                padding: 10%;
                 background-color: $services-background-one;
                 text-align: left;
-
+                display: grid;
+                grid-template-columns: 9% 1fr 9%;
+                grid-template-rows: 1fr;
+                align-items: center;
                 &.even{
                     background-color: $services-background-two;
                 }
-                .services-title{
-                }
-                .services-link{
+                .services-item-wrapper{
+                    grid-column: 2/3;
                 }
             }
 
@@ -35,18 +37,11 @@ $services-background-two:$light-pink;
     }
 }
 
-@media (min-width:578px) {
+@media (min-width:576px) {
     .services{
         .services-wrapper{
             grid-template-columns: 1fr 1fr;
-            .services-col:nth-child(1) { order: 1; }
-            .services-col:nth-child(2) { order: 2; }
-            .services-col:nth-child(3) { order: 4; }
-            .services-col:nth-child(4) { order: 3; }
-            .services-col:nth-child(5) { order: 5; }
-            .services-col:nth-child(6) { order: 6; }
-            .services-col:nth-child(7) { order: 8; }
-            .services-col:nth-child(8) { order: 7; }
+
         }
     }
 }

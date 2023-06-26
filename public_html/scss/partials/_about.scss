@@ -1,0 +1,27 @@
+.about{
+    margin-bottom: 143px;
+}
+
+.search{
+    position: relative;
+    .searchTerm {
+        width: 100%;
+        border: 1px solid $gray-900;
+        padding: 22px;
+        color: $gray-900;
+        font-family: $bodoni;
+        font-style: italic;
+        &:focus{
+            color: $dark-pink;
+        }
+    }
+    .searchButton {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        
+    }
+}

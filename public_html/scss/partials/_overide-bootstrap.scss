@@ -8,7 +8,9 @@ $grid-gutter-width:  12px;
 $gray-900: #1E1E1E;
 $link-color: $gray-900;
 $link-hover-decoration:none;
-
+$dark-pink:#D0B6B6;
+$light-pink:#ECD9D9;
+$off-white:#F5F5F5;
 
 $grid-breakpoints: (
 xs: 0,
@@ -19,10 +21,35 @@ lg: 992px,
 xl: 1200px
 );
 $container-max-widths: (
-xm: 370px,
+xm: 380px,
 sm: 540px,
 md: 720px,
 lg: 960px,
 xl: 1140px
 );
 
+//pagination
+$pagination-color:  $gray-900;
+$pagination-bg:                     transparent;
+$pagination-border-width:           1px;
+$pagination-border-color:          transparent;
+
+
+
+
+$pagination-hover-color:            $gray-900;
+$pagination-hover-bg:               transparent;
+$pagination-hover-border-color:     $light-pink;
+
+$pagination-active-color:           $dark-pink;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    transparent;
+
+$pagination-disabled-color:         rgba($gray-900, 0.4);
+$pagination-disabled-bg:            transparent;
+$pagination-disabled-border-color:  transparent;
+
+$input-placeholder-color: $gray-900;
+$breadcrumb-divider: quote("|");
+
+$breadcrumb-bg: transprent;
