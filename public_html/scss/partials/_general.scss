@@ -45,7 +45,11 @@ h2{
         width:74px;
     }
 }
-
+@-webkit-keyframes shortening{
+    100%{
+        width:74px;
+    }
+}
 h3{
     font-family: $general-font;
     font-size: 2rem;

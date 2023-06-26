@@ -9945,6 +9945,11 @@ h2 {
     width: 74px;
   }
 }
+@-webkit-keyframes shortening {
+  100% {
+    width: 74px;
+  }
+}
 h3 {
   font-family: "Lato", sans-serif;
   font-size: 2rem;

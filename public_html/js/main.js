@@ -29,7 +29,7 @@ $(document).ready(function () {
                         delay: letterDelay,
                         delayScale: scaleDelay
                     }});
-                 $(this).next('.h2-after').css({'animation':'shortening 2.5s linear', 'animation-fill-mode': 'forwards'});
+                 $(this).next('.h2-after').css({'animation':'shortening 2.5s linear', 'animation-fill-mode': 'forwards', 'webkit-animation':'shortening 2.5s linear', 'webkit-animation-fill-mode': 'forwards'});
             }
         });
     }
